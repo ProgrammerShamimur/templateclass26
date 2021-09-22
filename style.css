@@ -1,0 +1,189 @@
+/* ======================
+Default css start
+======================== */
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* ======================
+Default css end
+======================== */
+
+/* ==================================
+client section css start
+====================================== */
+.client-section{}
+.client-section-title{}
+.client-section-title h6{
+    color: #92a0f4;
+}
+.client-section-title h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+span.line-div{
+    position: relative;
+}
+span.line-div::after {
+    content: "";
+    height: 2px;
+    width: 55px;
+    position: absolute;
+    top: -27px;
+    left: 0;
+    background-color: #92a0f4;
+}
+.client-section-title p {
+    text-align: justify;
+    font-weight: 500;
+}
+.client-icon-logo {
+    border: 1px solid #ddd;
+    height: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.client-icon-logo::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(221, 221, 221, 0.808);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+}
+.client-icon-logo:hover::after{
+    visibility: visible;
+    opacity: 1;
+}
+.client-icon-logo img {
+    max-width: 100%;
+    filter: contrast(9%);
+    transition: .4s;
+}
+.client-icon-logo img:hover {
+    max-width: 100%;
+    filter: contrast(100%);
+}
+
+
+/* ==================================
+client section css end
+====================================== */
+.news-section-title{}
+.news-section-title p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.news-section-title span.line-div{
+    position: relative;
+}
+.news-section-title span.line-div::after {
+    content: "";
+    height: 2px;
+    width: 55px;
+    position: absolute;
+    top: -27px;
+    left: -36px;
+    background-color: #92a0f4;
+}
+
+
+.blog-thumbnail-author{
+    position: relative;
+}
+.blog-thumbnail-author img{}
+.author {
+    background: #3763eb;
+    width: 44%;
+    position: absolute;
+    bottom: 28px;
+    right: 15px;
+    border-radius: 30px;
+    padding: 5px 11px;
+}
+.author img {
+    height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.author span {
+    font-size: 9px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 22px;
+    font-weight: 600;
+}
+.blog-text {
+    margin-top: 40px;
+}
+.blog-text h4 {
+    font-weight: 600;
+    font-size: 23px;
+}
+.blog-text p{}
+
+
+/* ==================================
+news section css end
+====================================== */
+
+
+.fotter-section{
+    background-color: #111;
+}
+.fotter-widget{}
+.fotter-logo{}
+.fotter-logo img {
+    width: 140px;
+}
+.fotter-widget p {
+    color: #fff;
+    text-align: justify;
+    font-size: 15px;
+    width: 75%;
+    margin-bottom: 0;
+}
+.widget-social-icon{}
+.widget-social-icon ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.widget-social-icon ul li{
+    margin: 0 !important;
+}
+.widget-social-icon ul li a{
+    color: #fff;
+    padding: 0 15px;
+}
+.fotter-widget h5 {
+    color: #fff;
+    border-left: 2px solid #3763eb;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+.fotter-widget ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 24px;
+}
+.fotter-widget ul li {
+    color: #a4aab3;
+    display: block;
+    margin-bottom: 10px;
+}
+.fotter-section-item {
+    border-bottom: 1px solid #6c6b75;
+    padding-bottom: 45px;
+}
